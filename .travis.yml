@@ -34,18 +34,18 @@ env:
     - SPRING_OUTPUT_ANSI_ENABLED=ALWAYS
     - SPRING_JPA_SHOW_SQL=false
   # ----- ng1 applications -----
-  # matrix:
-  #   - JHIPSTER=ng1-mysql PROFILE=prod
-  #   - JHIPSTER=ng1-psql-es-noi18n PROFILE=prod
-  #   - JHIPSTER=ng1-social-websocket
-  #   - JHIPSTER=ng1-hazelcast-cucumber
-  #   - JHIPSTER=ng1-mariadb-kafka
-  #   - JHIPSTER=ng1-cassandra
-  #   - JHIPSTER=ng1-mongodb
-  #   - JHIPSTER=ng1-oauth2
-  #   - JHIPSTER=ng1-session
-  #   - JHIPSTER=ng1-infinispan
-  #
+  matrix:
+    - JHIPSTER=ng1-mysql PROFILE=prod
+    - JHIPSTER=ng1-psql-es-noi18n PROFILE=prod
+    - JHIPSTER=ng1-social-websocket
+    - JHIPSTER=ng1-hazelcast-cucumber
+    - JHIPSTER=ng1-mariadb-kafka
+    - JHIPSTER=ng1-cassandra
+    - JHIPSTER=ng1-mongodb
+    - JHIPSTER=ng1-oauth2
+    - JHIPSTER=ng1-session
+    - JHIPSTER=ng1-infinispan
+
   # ----- ngx applications -----
   # matrix:
   #   - JHIPSTER=ngx-mysql PROFILE=prod
