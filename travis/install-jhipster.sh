@@ -5,12 +5,12 @@ set -ev
 # Choose the repos
 #-------------------------------------------------------------------------------
 JHIPSTER_REPO=https://github.com/jhipster/generator-jhipster.git
-JHIPSTER_BRANCH=master
+JHIPSTER_BRANCH=spring-boot-2
 
 # if the JHIPSTER_DEPENDENCIES_BRANCH value is release,
 # it won't clone the project but use the release from Maven
 JHIPSTER_DEPENDENCIES_REPO=https://github.com/jhipster/jhipster-dependencies.git
-JHIPSTER_DEPENDENCIES_BRANCH=release
+JHIPSTER_DEPENDENCIES_BRANCH=spring-boot-2
 
 #-------------------------------------------------------------------------------
 # Install jhipster-dependencies
