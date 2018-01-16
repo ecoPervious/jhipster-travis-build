@@ -42,23 +42,23 @@ env:
     - JHIPSTER_BRANCH=spring-boot-2
 
   # ----- default applications -----
-  # matrix:
-  #   - JHIPSTER=ngx-default PROFILE=prod PROTRACTOR=1
-  #   - JHIPSTER=ngx-psql-es-noi18n PROFILE=prod PROTRACTOR=1
-  #   - JHIPSTER=ngx-gradle-fr PROFILE=prod PROTRACTOR=1
-  #   - JHIPSTER=ngx-mariadb-oauth2-sass-infinispan PROTRACTOR=1
-  #   - JHIPSTER=ngx-h2mem-social-ws-nol2
-  #   - JHIPSTER=ngx-mongodb-kafka-cucumber
-  #   - JHIPSTER=ngx-session-cassandra-fr
-  #   - JHIPSTER=ngx-couchbase
-  #   - JHIPSTER=ms-ngx-gateway-eureka
-  #   - JHIPSTER=ms-ngx-gateway-consul
-  #   - JHIPSTER=ms-ngx-gateway-uaa
-  #   - JHIPSTER=ms-micro-eureka
-  #   - JHIPSTER=ms-micro-consul
-  #   - JHIPSTER=react-default
-  #   - JHIPSTER=ng1-default
-  #
+  matrix:
+    - JHIPSTER=ngx-default PROFILE=prod PROTRACTOR=1
+    - JHIPSTER=ngx-psql-es-noi18n PROFILE=prod PROTRACTOR=1
+    - JHIPSTER=ngx-gradle-fr PROFILE=prod PROTRACTOR=1
+    - JHIPSTER=ngx-mariadb-oauth2-sass-infinispan PROTRACTOR=1
+    - JHIPSTER=ngx-h2mem-social-ws-nol2
+    - JHIPSTER=ngx-mongodb-kafka-cucumber
+    - JHIPSTER=ngx-session-cassandra-fr
+    - JHIPSTER=ngx-couchbase
+    - JHIPSTER=ms-ngx-gateway-eureka
+    - JHIPSTER=ms-ngx-gateway-consul
+    - JHIPSTER=ms-ngx-gateway-uaa
+    - JHIPSTER=ms-micro-eureka
+    - JHIPSTER=ms-micro-consul
+    - JHIPSTER=react-default
+    - JHIPSTER=ng1-default
+  
   # ----- ng1 applications -----
   # matrix:
   #   - JHIPSTER=ng1-mysql PROFILE=prod
@@ -126,22 +126,7 @@ env:
   #   - JHIPSTER=react-infinispan
   #   - JHIPSTER=react-couchbase
   #
-  matrix:
-    - JHIPSTER=ngx-default PROFILE=prod PROTRACTOR=1
-    - JHIPSTER=ngx-psql-es-noi18n PROFILE=prod PROTRACTOR=1
-    - JHIPSTER=ngx-gradle-fr PROFILE=prod PROTRACTOR=1
-    - JHIPSTER=ngx-mariadb-oauth2-sass-infinispan PROTRACTOR=1
-    - JHIPSTER=ngx-h2mem-social-ws-nol2 PROTRACTOR=0
-    # - JHIPSTER=ngx-mongodb-kafka-cucumber
-    # - JHIPSTER=ngx-session-cassandra-fr
-    # - JHIPSTER=ngx-couchbase
-    # - JHIPSTER=ms-ngx-gateway-eureka
-    # - JHIPSTER=ms-ngx-gateway-consul-clustered
-    # - JHIPSTER=ms-ngx-gateway-uaa
-    # - JHIPSTER=ms-micro-eureka
-    # - JHIPSTER=ms-micro-consul
-    # - JHIPSTER=react-default
-    # - JHIPSTER=ng1-default
+
 before_install:
   - jdk_switcher use oraclejdk8
   - java -version
